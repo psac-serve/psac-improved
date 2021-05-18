@@ -1,30 +1,25 @@
 package tokyo.peya.plugins.psacimproved;
 
-import com.zaxxer.hikari.HikariConfig;
-import com.zaxxer.hikari.HikariDataSource;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import static tokyo.peya.plugins.psacimproved.Variables.*;
+import java.util.logging.Logger;
 
 public final class PSACImproved extends JavaPlugin
 {
-
+    public static PSACImproved instance;
+    public static Logger logger;
 
     public PSACImproved()
     {
-        saveDefaultConfig();
-        config = getConfig();
-        
-        HikariConfig databaseConfig = new HikariConfig();
-        databaseConfig.setJdbcUrl(config.getString("database.jdbc"));
-        databaseConfig.setDriverClassName(config.getString("database.driver"));
-        
-        dataSource = new HikariDataSource(databaseConfig);
+        instance = this;
+        logger = getLogger();
     }
 
     @Override
     public void onEnable()
     {
+        logger.info("Initialize...");
+        Init.init();
     }
 
     @Override
