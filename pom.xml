@@ -71,5 +71,31 @@
             <version>1.16.5-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.github.psac-serve</groupId>
+            <artifactId>ban-manager</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>4.0.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.mojang</groupId>
+            <artifactId>authlib</artifactId>
+            <version>1.5.21</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.comphenix.protocol</groupId>
+            <artifactId>ProtocolLib</artifactId>
+            <version>4.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.P2P-Develop</groupId>
+            <artifactId>PeyangSuperLibrary</artifactId>
+            <version>114.191.9</version>
+        </dependency>
     </dependencies>
 </project>
