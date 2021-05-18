@@ -1,0 +1,6 @@
+# データベース
+database:
+  #ドライバ名 (Sqlite -> org.sqlite.JDBC MySQL -> com.mysql.jdbc.Driver)
+  driver: "org.sqlite.JDBC"
+  # JDBC URl
+  jdbc: "jdbc:sqlite:data.db"
