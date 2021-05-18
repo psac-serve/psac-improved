@@ -1,0 +1,7 @@
+name: PSACImproved
+version: ${project.version}
+main: tokyo.peya.plugins.pascimproved.PSACImproved
+api-version: 1.16
+softdepend: [PeyangGreatBanManager]
+authors: [Peyang, Potato1682]
+description: Improved PeyangSuperbAntiCheat
